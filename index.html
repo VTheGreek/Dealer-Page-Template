@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoDealer Pro</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <h1>AutoDealer Pro</h1>
+    <nav>
+      <ul>
+        <li><a href="#inventory">Inventory</a></li>
+        <li><a href="#financing">Financing</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2>Find Your Next Vehicle Today</h2>
+    <p>Quality used cars at competitive prices.</p>
+    <a href="#" class="btn">Browse Inventory</a>
+  </div>
+</section>
+
+<section class="inventory container" id="inventory">
+  <h2>Featured Vehicles</h2>
+
+  <div class="filters">
+    <button class="filter-btn active" data-type="all">All</button>
+    <button class="filter-btn" data-type="sedan">Sedan</button>
+    <button class="filter-btn" data-type="suv">SUV</button>
+    <button class="filter-btn" data-type="truck">Truck</button>
+  </div>
+
+  <div class="cars">
+
+    <div class="car-card" data-type="sedan">
+      <h3>2022 Honda Civic</h3>
+      <p>$18,900</p>
+    </div>
+
+    <div class="car-card" data-type="suv">
+      <h3>2021 Toyota RAV4</h3>
+      <p>$24,500</p>
+    </div>
+
+    <div class="car-card" data-type="truck">
+      <h3>2020 Ford F-150</h3>
+      <p>$29,990</p>
+    </div>
+
+    <div class="car-card" data-type="sedan">
+      <h3>2019 Hyundai Elantra</h3>
+      <p>$14,200</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <h2>About Our Dealership</h2>
+    <p>
+      We are a trusted local dealership providing quality pre-owned vehicles.
+      Every vehicle is inspected and ready for the road.
+    </p>
+  </div>
+</section>
+
+<section class="financing container" id="financing">
+  <h2>Financing Options</h2>
+  <p>
+    We work with multiple lenders to help you secure the best financing
+    solution regardless of your credit history.
+  </p>
+  <a href="#" class="btn">Apply for Financing</a>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <h2>Customer Reviews</h2>
+    <div class="testimonial">
+      <p>"Great experience and friendly staff!"</p>
+      <span>- John D.</span>
+    </div>
+    <div class="testimonial">
+      <p>"I found the perfect SUV at a great price."</p>
+      <span>- Maria S.</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact container" id="contact">
+  <h2>Contact Us</h2>
+
+  <form id="contactForm">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit" class="btn">Send Inquiry</button>
+    <p id="formMessage"></p>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 AutoDealer Pro</p>
+</footer>
+
+</body>
+</html>
