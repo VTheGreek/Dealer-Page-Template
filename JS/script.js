@@ -1,3 +1,12 @@
+function myFunction() {
+  var x = document.getElementById("ul");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 // Filter functionality
 const filterButtons = document.querySelectorAll(".filter-btn");
 const carCards = document.querySelectorAll(".car-card");

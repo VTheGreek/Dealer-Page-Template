@@ -32,6 +32,7 @@ header {
   align-items: center;
 }
 
+
 nav ul {
   list-style: none;
   display: flex;
@@ -41,6 +42,13 @@ nav ul {
 nav a {
   color: white;
   text-decoration: none;
+}
+
+.icon {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .hero {
@@ -154,9 +162,31 @@ footer {
   margin-top: 40px;
 }
 
-@media(max-width:768px){
+@media (max-width: 768px) {
+
   .nav {
-    flex-direction: column;
-    gap: 10px;
+    position: relative;
   }
+
+  /* Show hamburger */
+  .icon {
+    display: block;
+  }
+
+  /* Hide menu by default */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #111827;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
 }

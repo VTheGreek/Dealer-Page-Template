@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AutoDealer Pro</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -11,13 +13,16 @@
 <header>
   <div class="container nav">
     <h1>AutoDealer Pro</h1>
-    <nav>
-      <ul>
+    <nav id="navbar" class="navbar">
+      <ul id="ul">
         <li><a href="#inventory">Inventory</a></li>
         <li><a href="#financing">Financing</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa-solid fa-bars"></i>
+  </a>
     </nav>
   </div>
 </header>
